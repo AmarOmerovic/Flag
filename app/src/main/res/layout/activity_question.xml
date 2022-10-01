@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1"
-    android:background="@color/questionsBackground"
     android:orientation="vertical"
     tools:context=".QuestionActivity">
 
@@ -37,46 +36,53 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="25sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:paddingTop="5dp"
-            app:srcCompat="@drawable/flag_of_afghanistan" />
+            android:scaleType="fitXY"
+            tools:srcCompat="@drawable/flag_of_afghanistan"
+            app:strokeColor="@color/black"
+            app:strokeWidth="3dp" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20sp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="0.2"
             android:orientation="horizontal">
 
             <ProgressBar
+                android:id="@+id/progressBar"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="6dp"
                 android:layout_weight="0.2"
                 android:indeterminate="false"
-                android:max="9"
+                android:max="10"
                 android:padding="8dp"
                 android:progress="5"
                 android:progressDrawable="@drawable/my_progress" />
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/questionNum"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="5/10"
                 android:textColor="@color/black"
                 app:autoSizeMaxTextSize="16dp"
                 app:autoSizeMinTextSize="12dp"
                 app:autoSizeStepGranularity="2dp"
                 app:autoSizeTextType="uniform"
-                app:fontFamily="@font/alike" />
+                app:fontFamily="@font/alike"
+                tools:text="5/10" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -92,142 +98,30 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/firstAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/answerButtonColor"
-            android:fontFamily="@font/alike"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="10"
-            android:shadowDy="6"
-            android:shadowRadius="10"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:autoSizeMaxTextSize="20dp"
-            app:autoSizeMinTextSize="16dp"
-            app:autoSizeStepGranularity="2dp"
-            app:autoSizeTextType="uniform"
-            app:cornerRadius="4dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
+            style="@style/answerButtonStyle"
             tools:text="Argentina" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/secondAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/answerButtonColor"
-            android:fontFamily="@font/alike"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="10"
-            android:shadowDy="6"
-            android:shadowRadius="10"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:autoSizeMaxTextSize="20dp"
-            app:autoSizeMinTextSize="16dp"
-            app:autoSizeStepGranularity="2dp"
-            app:autoSizeTextType="uniform"
-            app:cornerRadius="4dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
+            style="@style/answerButtonStyle"
             tools:text="Brazil" />
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/thirdAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/answerButtonColor"
-            android:fontFamily="@font/alike"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="10"
-            android:shadowDy="6"
-            android:shadowRadius="10"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:autoSizeMaxTextSize="20dp"
-            app:autoSizeMinTextSize="16dp"
-            app:autoSizeStepGranularity="2dp"
-            app:autoSizeTextType="uniform"
-            app:cornerRadius="4dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
+            style="@style/answerButtonStyle"
             tools:text="Portugal" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/fourthAnswer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="3dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/answerButtonColor"
-            android:fontFamily="@font/alike"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="10"
-            android:shadowDy="6"
-            android:shadowRadius="10"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:autoSizeMaxTextSize="20dp"
-            app:autoSizeMinTextSize="16dp"
-            app:autoSizeStepGranularity="2dp"
-            app:autoSizeTextType="uniform"
-            app:cornerRadius="4dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1dp"
-            tools:text="Fance" />
+            style="@style/answerButtonStyle"
+            tools:text="France" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/submitButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            style="@style/controlButtons"
             android:layout_weight="1"
-            android:backgroundTint="@color/blue"
-            android:fontFamily="@font/alike"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowDx="10"
-            android:shadowDy="6"
-            android:shadowRadius="10"
-            android:text="@string/submit"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:autoSizeMaxTextSize="20dp"
-            app:autoSizeMinTextSize="16dp"
-            app:autoSizeStepGranularity="2dp"
-            app:autoSizeTextType="uniform"
-            app:cornerRadius="4dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="2dp" />
+            android:text="@string/submit" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

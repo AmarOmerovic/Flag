@@ -1,14 +1,13 @@
 <resources>
     <string name="app_name">Flag</string>
-    <string name="flag_game">Flag</string>
     <string name="welcome">Welcome</string>
     <string name="please_enter_your_name">Please enter your name.</string>
     <string name="start">START</string>
     <string name="name">Name</string>
-    <string name="globe">globe</string>
     <string name="cratedBy">by: Amar Omerović</string>
     <string name="question">To what country does this flag belong?</string>
     <string name="submit">SUBMIT</string>
     <string name="result">Result</string>
     <string name="hey_congratulations">Hey, Congratulations!</string>
+    <string name="finish">Finish</string>
 </resources>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,23 +11,13 @@
     tools:context=".ResultActivity">
 
     <com.google.android.material.textview.MaterialTextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
+        style="@style/headerText"
         android:layout_weight="3"
         android:autoSizeMaxTextSize="50dp"
         android:autoSizeMinTextSize="36dp"
         android:autoSizeStepGranularity="2dp"
         android:autoSizeTextType="uniform"
-        android:fontFamily="@font/alike"
-        android:gravity="center"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
         android:text="@string/result"
-        android:textColor="@color/white"
-        android:textStyle="bold"
         tools:ignore="TextContrastCheck" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -51,7 +40,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="8dp"
             android:layout_weight="1.2"
             android:autoSizeMaxTextSize="36dp"
             android:autoSizeMinTextSize="32dp"
@@ -69,9 +58,10 @@
             tools:ignore="TextContrastCheck" />
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="20sp"
+            android:layout_marginBottom="8dp"
             android:layout_weight="1.2"
             android:autoSizeMaxTextSize="28dp"
             android:autoSizeMinTextSize="20dp"
@@ -83,15 +73,16 @@
             android:shadowDx="10"
             android:shadowDy="6"
             android:shadowRadius="10"
-            android:text="Amar"
             android:textColor="@color/white"
             android:textStyle="bold"
-            tools:ignore="TextContrastCheck" />
+            tools:ignore="TextContrastCheck"
+            tools:text="Amar" />
 
         <TextView
+            android:id="@+id/score"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="20sp"
+            android:layout_marginBottom="13dp"
             android:layout_weight="1.23"
             android:autoSizeMaxTextSize="26dp"
             android:autoSizeMinTextSize="18dp"
@@ -99,36 +90,19 @@
             android:autoSizeTextType="uniform"
             android:fontFamily="@font/alike"
             android:gravity="center"
-            android:text="Your Score: 0/10"
             android:textColor="@color/white"
-            android:textStyle="italic" />
+            android:textStyle="italic"
+            tools:ignore="TextContrastCheck"
+            tools:text="Your Score: 0/10" />
 
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/finishButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_weight="1.1"
-            android:backgroundTint="@color/blue"
-            android:fontFamily="@font/alike"
-            android:shadowColor="@color/black"
-            android:shadowDx="10"
-            android:shadowDy="6"
-            android:shadowRadius="10"
-            android:text="Finish"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            app:autoSizeMaxTextSize="24dp"
-            app:autoSizeMinTextSize="20dp"
-            app:autoSizeStepGranularity="2dp"
-            app:autoSizeTextType="uniform"
-            app:cornerRadius="4dp"
-            app:strokeColor="@color/black"
-            app:strokeWidth="2dp" />
+            style="@style/controlButtons"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1.12"
+            android:enabled="true"
+            android:text="@string/finish" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

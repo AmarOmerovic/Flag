@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="top|center"
         android:layout_marginBottom="20dp"
-        android:layout_weight="1.25"
+        android:layout_weight="1.18"
         app:srcCompat="@drawable/flag" />
 
     <com.google.android.material.card.MaterialCardView
@@ -74,10 +74,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="1.059"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.05"
                 app:boxStrokeColor="@color/blue"
                 app:boxStrokeErrorColor="@color/pink"
                 app:errorEnabled="true"
@@ -88,11 +87,13 @@
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/nameText"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/alike"
                     android:hint="@string/name"
                     android:imeOptions="actionGo"
+                    android:layout_weight="1"
                     android:inputType="textCapWords"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gray"
                     android:textCursorDrawable="@drawable/text_cursor"
@@ -102,29 +103,11 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/startButton"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
+                style="@style/controlButtons"
+                android:layout_marginBottom="15dp"
                 android:layout_weight="1.08"
-                android:backgroundTint="@color/blue"
-                android:fontFamily="@font/alike"
-                android:shadowColor="@color/black"
-                android:shadowDx="10"
-                android:shadowDy="6"
-                android:shadowRadius="10"
-                android:text="@string/start"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:autoSizeMaxTextSize="24dp"
-                app:autoSizeMinTextSize="20dp"
-                app:autoSizeStepGranularity="2dp"
-                app:autoSizeTextType="uniform"
-                app:cornerRadius="4dp"
-                app:strokeColor="@color/black"
-                app:strokeWidth="2dp" />
+                android:enabled="true"
+                android:text="@string/start" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -135,7 +118,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.35"
+        android:layout_weight="1.32"
         android:fontFamily="@font/alike"
         android:gravity="center|bottom"
         android:padding="10dp"

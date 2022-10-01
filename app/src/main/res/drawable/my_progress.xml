@@ -3,9 +3,9 @@
         android:id="@android:id/background"
         android:gravity="center_vertical|fill_horizontal">
         <shape android:shape="rectangle">
-            <corners android:radius="10dp"/>
-            <size android:height="12dp"/>
-            <solid android:color="#4DADB5BD"/>
+            <corners android:radius="10dp" />
+            <size android:height="12dp" />
+            <solid android:color="#4DADB5BD" />
         </shape>
     </item>
     <item
@@ -13,11 +13,9 @@
         android:gravity="center_vertical|fill_horizontal">
         <scale android:scaleWidth="100%">
             <shape android:shape="rectangle">
-                <corners
-                    android:radius="10dp"
-                    />
-                <size android:height="12dp"/>
-                <solid android:color="@color/pink"/>
+                <corners android:radius="10dp" />
+                <size android:height="12dp" />
+                <solid android:color="@color/pink" />
             </shape>
         </scale>
     </item>

@@ -13,5 +13,7 @@
     <color name="gray">#7A8089</color>
     <color name="questionsBackground">#ffffff</color>
     <color name="answerButtonColor">#adb5bd</color>
+    <color name="red">#ef476f</color>
+    <color name="green">#0ead69</color>
 
 </resources>

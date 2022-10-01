@@ -5,9 +5,11 @@ import android.os.Bundle
 import android.text.TextUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.amaromerovic.flag.databinding.ActivityMainBinding
+import com.amaromerovic.flag.util.Util
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,9 +22,9 @@ class MainActivity : AppCompatActivity() {
                 binding.textInputLayout.error = "Field is empty!"
             } else if (binding.nameText.text.toString().trim().length < 3) {
                 binding.textInputLayout.error = "Oops, too short for a name!"
-            }else{
+            } else {
                 val intent = Intent(this, QuestionActivity::class.java)
-                intent.putExtra("Name", binding.nameText.text.toString().trim())
+                intent.putExtra(Util.NAME_KEY, binding.nameText.text.toString().trim())
                 startActivity(intent)
                 finish()
             }
