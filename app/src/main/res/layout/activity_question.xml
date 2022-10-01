@@ -1,167 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/questionsBackground"
-    android:orientation="vertical"
-    android:padding="10dp"
     tools:context=".QuestionActivity">
-
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/alike"
-        android:gravity="center"
-        android:shadowColor="@color/black"
-        android:shadowDx="3"
-        android:shadowDy="3"
-        android:shadowRadius="2"
-        android:text="@string/question"
-        android:textColor="@color/blue"
-        android:textSize="30sp"
-        android:textStyle="bold" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20sp"
-        android:src="@color/black" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="25sp"
-        android:orientation="horizontal">
-
-        <com.google.android.material.progressindicator.LinearProgressIndicator
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_weight="0.2"
-            android:padding="8dp"
-            app:indicatorColor="@color/black"
-            app:trackColor="@color/pink" />
+        android:background="@color/questionsBackground"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/alike"
             android:gravity="center"
-            android:text="1/10"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/question"
             android:textColor="@color/black"
-            android:textSize="16sp"
-            app:fontFamily="@font/alike" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20sp"
+            android:src="@color/black" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="0.2"
+                android:indeterminate="false"
+                android:max="9"
+                android:padding="8dp"
+                android:progress="5"
+                android:progressDrawable="@drawable/my_progress" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5/10"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:fontFamily="@font/alike" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/firstAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/answerButtonColor"
+            android:fontFamily="@font/alike"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            tools:text="Argentina" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/secondAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/answerButtonColor"
+            android:fontFamily="@font/alike"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            tools:text="Brazil" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/thirdAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/answerButtonColor"
+            android:fontFamily="@font/alike"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            tools:text="Portugal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fourthAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:backgroundTint="@color/answerButtonColor"
+            android:fontFamily="@font/alike"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            tools:text="Fance" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/alike"
+            android:shadowColor="@color/black"
+            android:shadowDx="10"
+            android:shadowDy="6"
+            android:shadowRadius="10"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/firstAnswer"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="3dp"
-        android:backgroundTint="@color/answerButtonColor"
-        android:fontFamily="@font/alike"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
-        android:text="Argentina"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:cornerRadius="4dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/secondAnswer"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="3dp"
-        android:backgroundTint="@color/answerButtonColor"
-        android:fontFamily="@font/alike"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
-        android:text="Brazil"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:cornerRadius="4dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/thirdAnswer"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="3dp"
-        android:backgroundTint="@color/answerButtonColor"
-        android:fontFamily="@font/alike"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
-        android:text="Portugal"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:cornerRadius="4dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/fourthAnswer"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="3dp"
-        android:backgroundTint="@color/answerButtonColor"
-        android:fontFamily="@font/alike"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
-        android:text="Fance"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:cornerRadius="4dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/submitButton"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/blue"
-        android:fontFamily="@font/alike"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
-        android:text="@string/submit"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:cornerRadius="4dp"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp" />
-</androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>

@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Flag" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Flag" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pink</item>
         <item name="colorPrimaryVariant">@color/pink</item>
@@ -13,7 +13,7 @@
     </style>
 
 
-    <style name="NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/pink</item>
         <item name="colorPrimaryVariant">@color/pink</item>
         <item name="colorOnPrimary">@color/white</item>

@@ -1,6 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Flag" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Flag" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pink</item>
         <item name="colorPrimaryVariant">@color/pink</item>
@@ -13,7 +13,7 @@
     </style>
 
 
-    <style name="NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/pink</item>
         <item name="colorPrimaryVariant">@color/pink</item>
         <item name="colorOnPrimary">@color/white</item>
@@ -21,13 +21,15 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="ActionBar" parent="Theme.MaterialComponents.DayNight">
+    <style name="ActionBar" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/pink</item>
         <item name="colorPrimaryVariant">@color/pink</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorPrimaryDark">@color/pink</item>
         <item name="colorAccent">@color/pink</item>
+        <item name="fontFamily">@font/alike</item>
+        <item name="android:textStyle">bold</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>

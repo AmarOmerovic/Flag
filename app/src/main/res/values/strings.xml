@@ -9,4 +9,6 @@
     <string name="cratedBy">by: Amar Omerović</string>
     <string name="question">To what country does this flag belong?</string>
     <string name="submit">SUBMIT</string>
+    <string name="result">Result</string>
+    <string name="hey_congratulations">Hey, Congratulations!</string>
 </resources>
