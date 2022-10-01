@@ -2,6 +2,7 @@ package com.amaromerovic.flag
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.amaromerovic.flag.databinding.ActivityMainBinding
 
@@ -15,8 +16,16 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.startButton.setOnClickListener {
-            val intent = Intent(this, QuestionActivity::class.java)
-            startActivity(intent)
+            if (TextUtils.isEmpty(binding.nameText.text)) {
+                binding.textInputLayout.error = "Field is empty!"
+            } else if (binding.nameText.text.toString().trim().length < 3) {
+                binding.textInputLayout.error = "Oops, too short for a name!"
+            }else{
+                val intent = Intent(this, QuestionActivity::class.java)
+                intent.putExtra("Name", binding.nameText.text.toString().trim())
+                startActivity(intent)
+                finish()
+            }
         }
     }
 }

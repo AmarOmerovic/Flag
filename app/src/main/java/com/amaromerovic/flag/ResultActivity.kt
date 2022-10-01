@@ -1,7 +1,7 @@
 package com.amaromerovic.flag
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.amaromerovic.flag.databinding.ActivityResultBinding
 
 class ResultActivity : AppCompatActivity() {

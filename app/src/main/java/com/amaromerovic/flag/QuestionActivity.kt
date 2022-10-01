@@ -30,34 +30,34 @@ class QuestionActivity : AppCompatActivity() {
     private fun markSelected(view: View) {
         if (view == binding.firstAnswer) {
             binding.firstAnswer.setStrokeColorResource(R.color.pink)
-            binding.firstAnswer.strokeWidth = 5
+            binding.firstAnswer.strokeWidth = 6
         } else {
             binding.firstAnswer.setStrokeColorResource(R.color.black)
-            binding.firstAnswer.strokeWidth = 2
+            binding.firstAnswer.strokeWidth = 3
         }
 
         if (view == binding.secondAnswer) {
             binding.secondAnswer.setStrokeColorResource(R.color.pink)
-            binding.secondAnswer.strokeWidth = 5
+            binding.secondAnswer.strokeWidth = 6
         } else {
             binding.secondAnswer.setStrokeColorResource(R.color.black)
-            binding.secondAnswer.strokeWidth = 2
+            binding.secondAnswer.strokeWidth = 3
         }
 
         if (view == binding.thirdAnswer) {
             binding.thirdAnswer.setStrokeColorResource(R.color.pink)
-            binding.thirdAnswer.strokeWidth = 5
+            binding.thirdAnswer.strokeWidth = 6
         } else {
             binding.thirdAnswer.setStrokeColorResource(R.color.black)
-            binding.thirdAnswer.strokeWidth = 2
+            binding.thirdAnswer.strokeWidth = 3
         }
 
         if (view == binding.fourthAnswer) {
             binding.fourthAnswer.setStrokeColorResource(R.color.pink)
-            binding.fourthAnswer.strokeWidth = 5
+            binding.fourthAnswer.strokeWidth = 6
         } else {
             binding.fourthAnswer.setStrokeColorResource(R.color.black)
-            binding.fourthAnswer.strokeWidth = 2
+            binding.fourthAnswer.strokeWidth = 3
         }
 
     }

@@ -19,7 +19,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.05"
         app:cardCornerRadius="20dp"
         app:cardElevation="10sp"
         app:cardUseCompatPadding="true"
@@ -33,8 +34,9 @@
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1.05"
                 android:background="@color/pink"
                 android:fontFamily="@font/alike"
                 android:gravity="center"
@@ -44,41 +46,56 @@
                 android:shadowRadius="10"
                 android:text="@string/welcome"
                 android:textColor="@color/white"
-                android:textSize="35sp"
                 android:textStyle="bold"
+                app:autoSizeMaxTextSize="38dp"
+                app:autoSizeMinTextSize="34dp"
+                app:autoSizeStepGranularity="2dp"
+                app:autoSizeTextType="uniform"
                 tools:ignore="TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:layout_weight="1.35"
                 android:fontFamily="@font/alike"
                 android:gravity="center"
                 android:text="@string/please_enter_your_name"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                app:autoSizeMaxTextSize="18dp"
+                app:autoSizeMinTextSize="16dp"
+                app:autoSizeStepGranularity="2dp"
+                app:autoSizeTextType="uniform" />
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp">
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1.059"
+                app:boxStrokeColor="@color/blue"
+                app:boxStrokeErrorColor="@color/pink"
+                app:errorEnabled="true"
+                app:errorIconTint="@color/pink"
+                app:errorTextColor="@color/pink"
+                app:hintTextColor="@color/blue">
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/nameText"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:fontFamily="@font/alike"
                     android:hint="@string/name"
                     android:imeOptions="actionGo"
                     android:inputType="textCapWords"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gray"
-                    android:textSize="18sp"
+                    android:textCursorDrawable="@drawable/text_cursor"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -86,10 +103,11 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/startButton"
                 android:layout_width="match_parent"
-                android:layout_height="65dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
+                android:layout_weight="1.08"
                 android:backgroundTint="@color/blue"
                 android:fontFamily="@font/alike"
                 android:shadowColor="@color/black"
@@ -99,8 +117,11 @@
                 android:text="@string/start"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
-                android:textSize="20sp"
                 android:textStyle="bold"
+                app:autoSizeMaxTextSize="24dp"
+                app:autoSizeMinTextSize="20dp"
+                app:autoSizeStepGranularity="2dp"
+                app:autoSizeTextType="uniform"
                 app:cornerRadius="4dp"
                 app:strokeColor="@color/black"
                 app:strokeWidth="2dp" />
@@ -114,7 +135,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1.25"
+        android:layout_weight="1.35"
         android:fontFamily="@font/alike"
         android:gravity="center|bottom"
         android:padding="10dp"
