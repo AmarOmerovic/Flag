@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    android:gravity="center"
     android:orientation="vertical"
     android:padding="12dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textview.MaterialTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20sp"
-        android:shadowColor="@color/black"
-        android:shadowDx="10"
-        android:shadowDy="6"
-        android:shadowRadius="10"
-        android:text="@string/flag_game"
-        android:textColor="@color/white"
-        android:textSize="45sp"
-        android:textStyle="bold" />
-
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1.03"
+        app:srcCompat="@drawable/flag" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#f1faee"
-        app:cardElevation="10sp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8598"
         app:cardCornerRadius="20dp"
+        app:cardElevation="10sp"
         app:cardUseCompatPadding="true"
         app:strokeColor="@color/black">
 
@@ -43,7 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_marginBottom="20dp"
-                android:background="#ff70a6"
+                android:background="@color/pink"
+                android:fontFamily="@font/alike"
                 android:gravity="center"
                 android:shadowColor="@color/black"
                 android:shadowDx="10"
@@ -51,7 +45,7 @@
                 android:shadowRadius="10"
                 android:text="@string/welcome"
                 android:textColor="@color/white"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
@@ -59,54 +53,74 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:textColor="@color/black"
                 android:layout_marginRight="20dp"
+                android:fontFamily="@font/alike"
                 android:text="@string/please_enter_your_name"
-                android:textSize="20sp" />
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/nameText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
+                    android:fontFamily="@font/alike"
+                    android:hint="@string/name"
                     android:imeOptions="actionGo"
                     android:inputType="textCapWords"
-                    android:textColor="#363A43"
-                    android:textColorHint="#7A8089"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray"
+                    android:textSize="18sp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/startButton"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#70d6ff"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/alike"
                 android:shadowColor="@color/black"
                 android:shadowDx="10"
                 android:shadowDy="6"
                 android:shadowRadius="10"
                 android:text="@string/start"
                 android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
                 app:cornerRadius="4dp"
-                android:textSize="27sp"
-                app:strokeWidth="1dp"
                 app:strokeColor="@color/black"
-                android:textStyle="bold" />
+                app:strokeWidth="1dp" />
 
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </com.google.android.material.card.MaterialCardView>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:fontFamily="@font/alike"
+        android:gravity="center|bottom"
+        android:padding="10dp"
+        android:text="@string/cratedBy"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+</LinearLayout>
