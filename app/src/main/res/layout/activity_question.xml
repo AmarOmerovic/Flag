@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@color/questionsBackground"
         android:orientation="vertical"
+        android:layout_gravity="center"
         android:padding="10dp">
 
         <com.google.android.material.textview.MaterialTextView
@@ -30,11 +31,11 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="250dp"
-            android:layout_height="150dp"
+            android:layout_width="320dp"
+            android:layout_height="160dp"
             android:layout_gravity="center"
             android:layout_marginBottom="20sp"
-            android:src="@color/black" />
+            app:srcCompat="@drawable/flag_of_afghanistan" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
